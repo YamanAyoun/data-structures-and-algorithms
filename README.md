@@ -8,7 +8,6 @@
 
 * [Insert-Shift-Array](InsertShiftArray)
 
-* [Linked-List](linked-list)
-* * [Test-Linked-List](TestLinkedList)
+* [Linked-List](linked-list) -> [Test-Linked-List](TestLinkedList)
  
 

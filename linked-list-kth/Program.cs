@@ -12,7 +12,7 @@
             list.Append("6");
 
             Console.WriteLine(list.ToString());
-            Console.WriteLine(list.KthFromEnd(3));
+            Console.WriteLine(list.KthFromEnd(6));
 
         }
     }

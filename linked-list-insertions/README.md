@@ -15,15 +15,15 @@ Insert After method time complixity is O(n) becouse the worst case, the given va
 
 
 Append : to Insert a new Node for last list.<br />
-![image 1](linked-list-insertions/Asserts/img1.png)
+![image 1](Asserts/img1.png)
 
-Insert Before method:
-![image 2](linked-list-insertions/Asserts/img2.png)
+Insert Before method:<br />
+![image 2](Asserts/img2.png)
 
-Insert After method
-![image 3](linked-list-insertions/Asserts/img3.png)
+Insert After method<br />
+![image 3](Asserts/img3.png)
 
-![image 4](linked-list-insertions/Asserts/img4.png)
-you can see in the list, how 5 insert after 4
-and how 0 insert before 1
-![image 5](linked-list-insertions/Asserts/img5.png)
+![image 4](Asserts/img4.png)<br />
+you can see in the list, how 5 insert after 4<br />
+and how 0 insert before 1<br />
+![image 5](Asserts/img5.png)

@@ -14,3 +14,5 @@
 
 * [linked-list-kth](linked-list-kth) -> [Test-linked-list-kth](TestLinkedList-kth)
 
+* [linked-list-zip](linkedListZip) -> [Test-linked-list-zip](TestLinkedListZip)
+

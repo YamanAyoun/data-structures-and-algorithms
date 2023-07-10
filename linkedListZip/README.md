@@ -15,7 +15,12 @@ space complexity is O(n) becouse a new linked_list_zip object, zipList, is creat
  
 
 ## Solution
-unity test
-![Whiteboard for linked-list-kth](Asserts/testkth.png)
+![code linked-list-Zip](Asserts/linkedlistzip.png)
+
+unity test<br />
+![test linked-list-Zip](Asserts/test.png)
+
+
+
 
 

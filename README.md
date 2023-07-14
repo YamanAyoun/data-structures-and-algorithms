@@ -16,3 +16,7 @@
 
 * [linked-list-zip](linkedListZip) -> [Test-linked-list-zip](TestLinkedListZip)
 
+* [stack-and-queue](stack-and-queue) -> [Test-stack-and-queue](TestStackandQueue)
+ 
+
+

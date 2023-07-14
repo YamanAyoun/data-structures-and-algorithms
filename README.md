@@ -14,3 +14,5 @@
 
 * [linked-list-kth](linked-list-kth) -> [Test-linked-list-kth](TestLinkedList-kth)
 
+* [stack-and-queue](stack-and-queue) -> [Test-stack-and-queue](TestStackandQueue)
+

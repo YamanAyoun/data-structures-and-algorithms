@@ -14,3 +14,9 @@
 
 * [linked-list-kth](linked-list-kth) -> [Test-linked-list-kth](TestLinkedList-kth)
 
+* [linked-list-zip](linkedListZip) -> [Test-linked-list-zip](TestLinkedListZip)
+
+* [stack-and-queue](stack-and-queue) -> [Test-stack-and-queue](TestStackandQueue)
+ 
+
+

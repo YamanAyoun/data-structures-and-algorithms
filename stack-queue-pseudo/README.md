@@ -1,7 +1,7 @@
 # Code Challenge 11: stack-queue-pseudo
 
 ## Whiteboard Process
-![stack and queue pseudo](Asserts/cc9.png)
+![stack and queue pseudo](Asserts/cc11.png)
 
 ## Approach & Efficiency
 

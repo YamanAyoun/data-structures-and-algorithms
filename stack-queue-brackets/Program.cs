@@ -1,6 +1,6 @@
 ﻿namespace stack_queue_brackets
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\stack-queue-brackets\stack-queue-brackets.csproj" />
+    <ProjectReference Include="..\trees\trees.csproj" />
   </ItemGroup>
 
 </Project>

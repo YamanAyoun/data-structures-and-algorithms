@@ -5,14 +5,14 @@ namespace TestTree
     public class UnitTest1
     {
         [Fact]
-        public void CanInstantiateEmptyTree()
+        public void EmptyTree()
         {
             BinaryTree<int> tree = new BinaryTree<int>();
             Assert.Null(tree.Root);
         }
 
         [Fact]
-        public void CanInstantiateTreeWithSingleRootNode()
+        public void TreeWithSingleRootNode()
         {
             BinarySearchTree<int> tree = new BinarySearchTree<int>();
             tree.Add(1);
@@ -20,7 +20,7 @@ namespace TestTree
         }
 
         [Fact]
-        public void CanAddLeftAndRightChildToNodeInBinarySearchTree()
+        public void AddLeftChildAndRightChildToBinarySearchTree()
         {
             BinarySearchTree<int> tree = new BinarySearchTree<int>();
             tree.Add(5);
@@ -35,7 +35,7 @@ namespace TestTree
         }
 
         [Fact]
-        public void CanReturnPreOrderTraversal()
+        public void PreOrderTraversal()
         {
             BinarySearchTree<int> tree = new BinarySearchTree<int>();
             tree.Add(3);
@@ -50,7 +50,7 @@ namespace TestTree
         }
 
         [Fact]
-        public void CanReturnInOrderTraversal()
+        public void InOrderTraversal()
         {
             BinarySearchTree<int> tree = new BinarySearchTree<int>();
             tree.Add(3);
@@ -64,7 +64,7 @@ namespace TestTree
         }
 
         [Fact]
-        public void CanReturnPostOrderTraversal()
+        public void PostOrderTraversal()
         {
             BinarySearchTree<int> tree = new BinarySearchTree<int>();
             tree.Add(3);

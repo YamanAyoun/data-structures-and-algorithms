@@ -87,5 +87,22 @@ namespace TestTree
             Assert.True(tree.Contains(10));
             Assert.False(tree.Contains(12));
         }
+
+        [Fact]
+        public void TestFindMaximumInTree()
+        {
+            
+            BinarySearchTree<int> tree = new BinarySearchTree<int>();
+
+            tree.Add(2);
+            tree.Add(7);
+            tree.Add(5);
+            tree.Add(2);
+            tree.Add(6);
+            tree.Add(9);
+            tree.Add(11);
+
+            Assert.Equal(11, tree.FindMaximumValue());
+        }
     }
 }

@@ -47,6 +47,26 @@ namespace trees
             else
                 return Contains(node.Right!, value);
         }
+
+        public T FindMaximumValue()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("Tree is empty!");
+            }
+
+            return FindMaximumValue(Root);
+        }
+
+        private T FindMaximumValue(Node<T> node)
+        {
+            while (node.Right != null)
+            {
+                node = node.Right;
+            }
+
+            return node.Value;
+        }
     }
 
 }

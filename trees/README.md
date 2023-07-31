@@ -14,4 +14,4 @@ Time Complexity: method is O(n) because, in a balanced tree, we need to traverse
 Space Complexity:method is O(1) because it uses a constant amount of extra space. 
 
 ## Solution
-![test tree max](Asserts/treetest.png)
+![test tree max](Asserts/testmaxtree.png)

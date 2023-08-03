@@ -1,25 +1,27 @@
-﻿namespace trees
+﻿using System.Collections.Generic;
+
+namespace trees
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            // Add elements to the tree
-            bst.Add(10);
-            bst.Add(5);
-            bst.Add(15);
-            bst.Add(3);
-            bst.Add(7);
-            bst.Add(12);
-            bst.Add(18);
+            var list = new BinarySearchTree<int>();
+            list.Add(2);
+            list.Add(7);
+            list.Add(5);
+            list.Add(2);
+            list.Add(6);
+            list.Add(9);
+            list.Add(5);
+            list.Add(11);
+            list.Add(4);
 
-            // Find the maximum value in the tree
-            int maxValue = bst.FindMaximumValue();
-
-            // Print the result
-            Console.WriteLine("Maximum value in the tree: " + maxValue);
+            List<int> result = list.BreadthFirst(list);
+            Console.WriteLine(string.Join(", ", result));
         }
+
+    
     }
 }

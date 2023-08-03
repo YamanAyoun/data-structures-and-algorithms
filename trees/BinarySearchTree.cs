@@ -67,6 +67,36 @@ namespace trees
 
             return node.Value;
         }
-    }
+       
+
+        public List<T> BreadthFirst(BinarySearchTree<T> tree)
+        {
+            List<T> breadthFirst = new List<T>();
+
+            Queue<Node<T>> queue = new Queue<Node<T>>();
+            queue.Enqueue(tree.Root);
+
+            if (tree.Root == null)
+                return breadthFirst;
+
+            
+
+            while (queue.Count > 0)
+            {
+                Node<T> front = queue.Dequeue();
+                breadthFirst.Add(front.Value);
+
+                if (front.Left != null)
+                    queue.Enqueue(front.Left);
+
+                if (front.Right != null)
+                    queue.Enqueue(front.Right);
+            }
+
+            return breadthFirst;
+        }
+    
+
+}
 
 }

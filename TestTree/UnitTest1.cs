@@ -104,5 +104,35 @@ namespace TestTree
 
             Assert.Equal(11, tree.FindMaximumValue());
         }
+
+        [Fact]
+        public void TestBreadthFirst()
+        {
+
+            BinarySearchTree<int> tree = new BinarySearchTree<int>();
+            tree.Add(5);
+            tree.Add(3);
+            tree.Add(7);
+            tree.Add(2);
+            tree.Add(4);
+            tree.Add(6);
+            tree.Add(8);
+            
+            var result = tree.BreadthFirst(tree);
+            
+            int[] expected = { 5, 3, 7, 2, 4, 6, 8 };
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestEmptyTreeBreadthFirst()
+        {
+            BinarySearchTree<int> tree = new BinarySearchTree<int>();
+
+            List<int> expectedOutput = new List<int>();
+            List<int> result = tree.BreadthFirst(tree);
+
+            Assert.Equal(expectedOutput, result);
+        }
     }
 }

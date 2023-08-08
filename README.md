@@ -17,6 +17,14 @@
 * [linked-list-zip](linkedListZip) -> [Test-linked-list-zip](TestLinkedListZip)
 
 * [stack-and-queue](stack-and-queue) -> [Test-stack-and-queue](TestStackandQueue)
+
+* [stack-and-queue-pesudo](stack-queue-pseudo)
+
+* [stack-and-queue-animal](stack-queue-animal-shelter)
+
+* [stack-and-queue-brackets](stack-queue-brackets) -> [Test-stack-and-queue-brackets](TestStackQueueBracket)
+
+* [Trees](trees) -> [Test Trees](TestTree)
  
 
 

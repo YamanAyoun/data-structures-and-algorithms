@@ -7,12 +7,20 @@ using System.Threading.Tasks;
 
 namespace stack_queue_pseudo
 {
+    
     public class pseudoQueue
     {
-        Stack stack1 = new Stack();
-        Stack stack2 = new Stack();
+        
+            public Stack stack1;
+            public Stack stack2;
 
-        public void Enqueue(string value)
+            public pseudoQueue()
+            {
+                stack1 = new Stack();
+                stack2 = new Stack();
+            }
+
+            public void Enqueue(string value)
         {
             while (stack1.top != null)
             {

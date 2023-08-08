@@ -8,7 +8,7 @@ namespace trees
 {
     public class BinarySearchTree<T> : BinaryTree<T> where T : IComparable
     {
-        
+
         public void Add(T value)
         {
             Root = AddNode(Root, value);
@@ -67,7 +67,7 @@ namespace trees
 
             return node.Value;
         }
-       
+
 
         public List<T> BreadthFirst(BinarySearchTree<T> tree)
         {
@@ -79,7 +79,7 @@ namespace trees
             if (tree.Root == null)
                 return breadthFirst;
 
-            
+
 
             while (queue.Count > 0)
             {
@@ -95,8 +95,51 @@ namespace trees
 
             return breadthFirst;
         }
-    
 
-}
+
+        public List<string> FizzBuzz(BinarySearchTree<int> root)
+        {
+            List<string> list = new List<string>();
+
+            if (root.Root == null)
+
+                return list;
+
+            Queue<Node<int>> queue = new Queue<Node<int>>();
+            queue.Enqueue(root.Root);
+
+            while (queue.Count > 0)
+            {
+                Node<int> front = queue.Dequeue();
+
+
+                if (front.Left != null)
+                    queue.Enqueue(front.Left);
+
+                if (front.Right != null)
+                    queue.Enqueue(front.Right);
+
+                if (front.Value % 15 == 0)
+                {
+                    list.Add("FizzBuzz");
+                }
+                else if (front.Value % 3 == 0)
+                {
+                    list.Add("Fizz");
+                }
+                else if (front.Value % 5 == 0)
+                {
+                    list.Add("Buzz");
+                }
+                else
+                {
+                    list.Add(front.Value.ToString());
+                }
+                
+            }
+            return list;
+        }
+
+    }
 
 }

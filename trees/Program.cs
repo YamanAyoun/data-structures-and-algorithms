@@ -2,26 +2,30 @@
 
 namespace trees
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            BinarySearchTree<int> intTree = new BinarySearchTree<int>();
+            
+            intTree.Add(5);
+            intTree.Add(15);
+            intTree.Add(3);
+            intTree.Add(7);
+            
 
-            var list = new BinarySearchTree<int>();
-            list.Add(2);
-            list.Add(7);
-            list.Add(5);
-            list.Add(2);
-            list.Add(6);
-            list.Add(9);
-            list.Add(5);
-            list.Add(11);
-            list.Add(4);
 
-            List<int> result = list.BreadthFirst(list);
-            Console.WriteLine(string.Join(", ", result));
-        }
+            Console.WriteLine("FizzBuzz:");
+            List<string> fizzBuzzResult = intTree.FizzBuzz(intTree);
+            foreach (string value in fizzBuzzResult)
+            {
+                Console.WriteLine(value + " ");
+            }
+            Console.WriteLine();
 
-    
+        
+    }
+
+        
     }
 }

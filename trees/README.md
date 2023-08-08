@@ -1,3 +1,20 @@
+# Code Challenge: Class 18
+# tree-fizz-buzz
+
+## Write a method called fizz buzz tree and Determine whether or not the value of each node is divisible by 3, 5 or both. 
+
+## Whiteboard
+![whiteboard](Asserts/cc18.png)
+
+## Approach
+
+Big O
+
+Time Complexity: O(n) becouse use binary search tree.
+
+Space Complexity: O(n) becouse 
+list of strings will store the FizzBuzz results for each node.
+
 # Code Challenge: Class 17
 Write a method that takes a tree as argument and return list of all values in the tree, in the order they were encountered using breadth-first-approach.
 
@@ -43,5 +60,3 @@ Space Complexity:method is O(1) because it uses a constant amount of extra space
 
 ## Unit Test
 ![Test](Asserts/treetest.png)
-
-

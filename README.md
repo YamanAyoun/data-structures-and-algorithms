@@ -25,6 +25,6 @@
 * [stack-and-queue-brackets](stack-queue-brackets) -> [Test-stack-and-queue-brackets](TestStackQueueBracket)
 
 * [Trees](trees) -> [Test Trees](TestTree)
- 
 
+* [Insertion Sort](insertion-sort)
 

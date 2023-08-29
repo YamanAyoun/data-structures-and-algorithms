@@ -6,25 +6,12 @@ namespace trees
     {
         static void Main(string[] args)
         {
-            BinarySearchTree<int> intTree = new BinarySearchTree<int>();
-            
-            intTree.Add(5);
-            intTree.Add(15);
-            intTree.Add(3);
-            intTree.Add(7);
-            
+            BinarySearchTree<int> tree = new BinarySearchTree<int>();
+            // Add nodes and values to the tree
 
-
-            Console.WriteLine("FizzBuzz:");
-            List<string> fizzBuzzResult = intTree.FizzBuzz(intTree);
-            foreach (string value in fizzBuzzResult)
-            {
-                Console.WriteLine(value + " ");
-            }
-            Console.WriteLine();
-
-        
-    }
+            int oddSum = SumOddNumbers(tree);
+            Console.WriteLine("Sum of odd numbers: " + oddSum);
+        }
 
         
     }

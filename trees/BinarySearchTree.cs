@@ -140,6 +140,33 @@ namespace trees
             return list;
         }
 
+        public int SumOddNumbers(BinarySearchTree<int> tree)
+        {
+            int sum = 0;
+
+            if (tree.Root == null)
+                return sum;
+
+            Queue<Node<int>> queue = new Queue<Node<int>>();
+            queue.Enqueue(tree.Root);
+
+            while (queue.Count > 0)
+            {
+                Node<int> front = queue.Dequeue();
+
+                if (front.Value % 2 != 0)
+                    sum += front.Value;
+
+                if (front.Left != null)
+                    queue.Enqueue(front.Left);
+
+                if (front.Right != null)
+                    queue.Enqueue(front.Right);
+            }
+
+            return sum;
+        }
+
     }
 
 }

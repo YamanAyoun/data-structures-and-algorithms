@@ -3,7 +3,7 @@
 Write the implementation for the Insertion Sort Algorithm
 
 ## Whiteboard Process
-![insertion-sort](insertion-sort/Asserts/cc26.png)
+![insertion-sort](Asserts/cc26.png)
 
 ## Approach & Efficiency
 

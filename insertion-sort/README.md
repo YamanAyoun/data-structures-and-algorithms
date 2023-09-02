@@ -85,6 +85,7 @@ public static void Merge(int[] left, int[] right, int[] arr)
         }
     }
 }
+```
 
 # Challenge 26
 

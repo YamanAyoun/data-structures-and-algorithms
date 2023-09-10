@@ -29,3 +29,5 @@
 * [Insertion Sort](insertion-sort) -> [Test Sort](TestSorting)
 
 * [Merge Sort](insertion-sort) -> [Test Merge](TestSorting)
+
+* [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSorting)

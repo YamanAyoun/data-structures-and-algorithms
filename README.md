@@ -30,4 +30,4 @@
 
 * [Merge Sort](insertion-sort) -> [Test Merge](TestSorting)
 
-* [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSorting)
+* [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSortingMovie)

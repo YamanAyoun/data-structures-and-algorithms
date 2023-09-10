@@ -69,7 +69,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "insertion-sort", "insertion
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "insertion-sort", "insertion-sort\insertion-sort.csproj", "{EA7DFBD6-C0D9-40FF-ADA3-3D105220F40A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSorting", "TestSorting\TestSorting.csproj", "{43C10015-7860-4F77-96BC-CE1144EDCCA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSorting", "TestSorting\TestSorting.csproj", "{43C10015-7860-4F77-96BC-CE1144EDCCA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingMovie", "SortingMovie", "{48EA09A9-E7C5-4C3A-A6F9-65A6D8A027E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting_Movie", "Sorting_Movie\Sorting_Movie.csproj", "{7BAA879D-8380-478E-A0EE-9AF26A4EF021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSortingMovie", "TestSortingMovie\TestSortingMovie.csproj", "{C428020E-7294-4E68-9394-34B5FA08F6A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +175,14 @@ Global
 		{43C10015-7860-4F77-96BC-CE1144EDCCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C10015-7860-4F77-96BC-CE1144EDCCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C10015-7860-4F77-96BC-CE1144EDCCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAA879D-8380-478E-A0EE-9AF26A4EF021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAA879D-8380-478E-A0EE-9AF26A4EF021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAA879D-8380-478E-A0EE-9AF26A4EF021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAA879D-8380-478E-A0EE-9AF26A4EF021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C428020E-7294-4E68-9394-34B5FA08F6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C428020E-7294-4E68-9394-34B5FA08F6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C428020E-7294-4E68-9394-34B5FA08F6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C428020E-7294-4E68-9394-34B5FA08F6A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +207,8 @@ Global
 		{0C655CDD-B8E4-4DDB-9F7B-3003C66347AA} = {639C00F7-E33D-4E6E-BB8E-9020CD7B00CC}
 		{EA7DFBD6-C0D9-40FF-ADA3-3D105220F40A} = {40B8BFE3-C31F-4B2C-8297-01596649C60C}
 		{43C10015-7860-4F77-96BC-CE1144EDCCA5} = {40B8BFE3-C31F-4B2C-8297-01596649C60C}
+		{7BAA879D-8380-478E-A0EE-9AF26A4EF021} = {48EA09A9-E7C5-4C3A-A6F9-65A6D8A027E2}
+		{C428020E-7294-4E68-9394-34B5FA08F6A9} = {48EA09A9-E7C5-4C3A-A6F9-65A6D8A027E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF65C6DD-95F0-4693-9DBC-97AAB3621722}

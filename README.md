@@ -31,3 +31,5 @@
 * [Merge Sort](insertion-sort) -> [Test Merge](TestSorting)
 
 * [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSortingMovie)
+
+* [Hash Table](Hash-Table) -> [Test Hash Table](TestHashTable)

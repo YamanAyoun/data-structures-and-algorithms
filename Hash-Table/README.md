@@ -73,4 +73,4 @@ public class UnitTest1
 }
 ```
 
-![Test Hash Table](Hash-Table/Asserts/hashtabletest.png)
+![Test Hash Table](Asserts/hashtabletest.png)

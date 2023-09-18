@@ -33,3 +33,5 @@
 * [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSortingMovie)
 
 * [Hash Table](Hash-Table) -> [Test Hash Table](TestHashTable)
+
+* [hashmap-repeated-word](hashmap-repeated-word) -> [hashmap-repeated-word](TestHashTable)

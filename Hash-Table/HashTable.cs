@@ -88,6 +88,22 @@ namespace Hash_Table
 
             return hashValue;
         }
+        public static string RepeatedWord(string input)
+        {
+            HashTable hash = new HashTable();
+            input = input.Replace(",", string.Empty);
+            string[] words = input.ToLower().Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (hash.Has(words[i]))
+                {
+                    return hash.Get(words[i]);
+                }
+                hash.Set(words[i], words[i]);
+            }
+
+            return "nothing repeated";
+        }
 
     }
 }

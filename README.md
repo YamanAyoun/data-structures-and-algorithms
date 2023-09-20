@@ -36,4 +36,4 @@
 
 * [hashmap-repeated-word](hashmap-repeated-word) -> [hashmap-repeated-word](TestHashTable)
 
-* [Tree-Intersection](Tree-Intersection.md)
+* [Tree-Intersection](Hash-Table/Tree-Intersection.md)

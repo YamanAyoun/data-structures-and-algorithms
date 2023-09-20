@@ -79,9 +79,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSortingMovie", "TestSor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hash-table", "hash-table", "{20246F01-D474-43B7-AECA-7F6A6F063B9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash-Table", "Hash-Table\Hash-Table.csproj", "{4B9BFF9D-E351-4405-B17B-1E5217D49345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hash-Table", "Hash-Table\Hash-Table.csproj", "{4B9BFF9D-E351-4405-B17B-1E5217D49345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHashTable", "TestHashTable\TestHashTable.csproj", "{E8A77CD8-91F9-4FE9-9CC9-D45BB564E8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHashTable", "TestHashTable\TestHashTable.csproj", "{E8A77CD8-91F9-4FE9-9CC9-D45BB564E8E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,5 @@
 using Hash_Table;
+using System.Collections.Generic;
 
 namespace TestHashTable
 {
@@ -71,5 +72,56 @@ namespace TestHashTable
         {
             Assert.Equal("summer", HashTable.RepeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn?t know what I was doing in New York..."));
         }
+
+        [Fact]
+        public void LeftJoin()
+        {
+            // Arrange
+            HashTable firstHashTable = new HashTable();
+            firstHashTable.Set("happy", "joyful");
+            firstHashTable.Set("sad", "unhappy");
+
+            HashTable secondHashTable = new HashTable();
+
+            // Act
+            HashTable result = HashTable.LeftJoin(firstHashTable, secondHashTable);
+
+            // Assert
+            Assert.Equal("joyful (antonym: NULL)", result.Get("happy"));
+            Assert.Equal("unhappy (antonym: NULL)", result.Get("sad"));
+        }
+
+        [Fact]
+        public void LeftJoin_FirstHashTableIsEmpty()
+        {
+            // Arrange
+            HashTable firstHashTable = new HashTable();
+            HashTable secondHashTable = new HashTable();
+            secondHashTable.Set("happy", "sad");
+
+            // Act
+            HashTable result = HashTable.LeftJoin(firstHashTable, secondHashTable);
+
+            // Assert
+            Assert.Null(result.Get("happy"));
+        }
+
+
+        [Fact]
+        public void LeftJoin_KeyNotFoundInFirstHashTable()
+        {
+            // Arrange
+            HashTable firstHashTable = new HashTable();
+            firstHashTable.Set("happy", "joyful");
+
+            HashTable secondHashTable = new HashTable();
+            secondHashTable.Set("smart", "dumb");
+
+            // Act
+            HashTable result = HashTable.LeftJoin(firstHashTable, secondHashTable);
+
+            // Assert
+            Assert.Null(result.Get("smart"));
+        }
     }
-}
+	}

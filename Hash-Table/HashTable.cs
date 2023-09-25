@@ -105,5 +105,27 @@ namespace Hash_Table
             return "nothing repeated";
         }
 
+        public static HashTable LeftJoin(HashTable firstHashTable, HashTable secondHashTable)
+        {
+            HashTable result = new HashTable();
+
+            foreach (string key in firstHashTable.Keys())
+            {
+                string synonym = firstHashTable.Get(key);
+                string antonym = secondHashTable.Get(key);
+
+                if (antonym != null)
+                {
+                    result.Set(key, $"{synonym} (antonym: {antonym})");
+                }
+                else
+                {
+                    result.Set(key, $"{synonym} (antonym: NULL)");
+                }
+            }
+
+            return result;
+        }
+
     }
 }

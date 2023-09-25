@@ -29,3 +29,11 @@
 * [Insertion Sort](insertion-sort) -> [Test Sort](TestSorting)
 
 * [Merge Sort](insertion-sort) -> [Test Merge](TestSorting)
+
+* [Sorting Movie](Sorting_Movie) -> [Test Sorting Movie](TestSortingMovie)
+
+* [Hash Table](Hash-Table) -> [Test Hash Table](TestHashTable)
+
+* [hashmap-repeated-word](hashmap-repeated-word) -> [hashmap-repeated-word](TestHashTable)
+
+* [Tree-Intersection](Hash-Table/Tree-Intersection.md)

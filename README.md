@@ -30,4 +30,4 @@
 
 * [Merge Sort](insertion-sort) -> [Test Merge](TestSorting)
 
-* [Graph](Graph) -> [Test Graph](GraphTest)
+* [Graph](graph) -> [Test Graph](GraphTests)

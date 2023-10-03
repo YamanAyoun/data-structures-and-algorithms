@@ -94,5 +94,40 @@ namespace GraphTests
             Assert.Equal(3, size);
         }
 
+
+        [Fact]
+        public void BreadthFirst()
+        {
+            // Arrange
+            Graph graph = new Graph();
+            graph.AddVertex("Pandora");
+            graph.AddVertex("Arendelle");
+            graph.AddVertex("Metroville");
+            graph.AddVertex("Monstroplolis");
+            graph.AddEdge("Pandora", "Arendelle");
+            graph.AddEdge("Pandora", "Metroville");
+            graph.AddEdge("Arendelle", "Monstroplolis");
+            graph.AddEdge("Metroville", "Monstroplolis");
+
+            // Act
+            List<string> result = graph.BreadthFirst("Pandora");
+
+            // Assert
+            Assert.Equal(new List<string> { "Pandora", "Arendelle", "Metroville", "Monstroplolis" }, result);
+        }
+
+        [Fact]
+        public void BreadthFirst_EmptyList()
+        {
+            // Arrange
+            Graph graph = new Graph();
+
+            // Act
+            List<string> result = graph.BreadthFirst("test");
+
+            // Assert
+            Assert.Empty(result);
+        }
+
     }
 }

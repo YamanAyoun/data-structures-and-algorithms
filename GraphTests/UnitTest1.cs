@@ -129,5 +129,41 @@ namespace GraphTests
             Assert.Empty(result);
         }
 
+        [Fact]
+        public void BusinessTrip_ValidDirectFlights_ShouldReturnTotalCost()
+        {
+            // Arrange
+            Graph graph = new Graph();
+            graph.AddVertex("Arendelle");
+            graph.AddVertex("New Monstropolis");
+            graph.AddVertex("Naboo");
+            graph.AddEdge("Arendelle", "New Monstropolis", 42);
+            graph.AddEdge("New Monstropolis", "Naboo", 73);
+
+            string[] trip = new string[] { "Arendelle", "New Monstropolis", "Naboo" };
+
+            // Act
+            int? cost = graph.BusinessTrip(graph, trip);
+
+            // Assert
+            Assert.Equal(115, cost);
+        }
+        [Fact]
+        public void BusinessTrip_SingleCity_ShouldReturnNull()
+        {
+            // Arrange
+            Graph graph = new Graph();
+            graph.AddVertex("Arendelle");
+
+            string[] trip = new string[] { "Arendelle" };
+
+            // Act
+            int? cost = graph.BusinessTrip(graph, trip);
+
+            // Assert
+            Assert.Null(cost);
+        }
+
+
     }
 }

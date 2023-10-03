@@ -80,5 +80,36 @@ namespace graph
             return listVertex;
         }
 
+        public int? BusinessTrip(Graph graph, string[] cities)
+        {
+            if (cities == null || cities.Length < 2)
+            {
+                return null;
+            }
+
+            int sum = 0;
+
+            for (int i = 0; i < cities.Length - 1; i++)
+            {
+                string current = cities[i];
+                string next = cities[i + 1];
+
+                List<(string, int)> neighbors = graph.GetNeighbors(current);
+                
+
+                foreach (var neighbor in neighbors)
+                {
+                    if (neighbor.Item1 == next)
+                    {
+                        sum += neighbor.Item2;
+                        break;
+                    }
+                }
+
+            }
+
+            return sum;
+        }
+
     }
 }

@@ -49,6 +49,36 @@ namespace graph
         {
             return vertices.Count;
         }
-        
+
+        public List<string> BreadthFirst(string value)
+        {
+            List<string> listVertex = new List<string>();
+            Queue<string> queue = new Queue<string>();
+            Dictionary<string, bool> visited = new Dictionary<string, bool>();
+
+            if (vertices.ContainsKey(value))
+            {
+                queue.Enqueue(value);
+                visited[value] = true;
+
+                while (queue.Count > 0)
+                {
+                    string currentVertex = queue.Dequeue();
+                    listVertex.Add(currentVertex);
+
+                    foreach (var neighbor in vertices[currentVertex])
+                    {
+                        if (!visited.ContainsKey(neighbor.Item1))
+                        {
+                            queue.Enqueue(neighbor.Item1);
+                            visited[neighbor.Item1] = true;
+                        }
+                    }
+                }
+            }
+
+            return listVertex;
+        }
+
     }
 }

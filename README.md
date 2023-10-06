@@ -46,3 +46,5 @@
 * [graph-breadth-first](graph) -> [Test graph-breadth-first](GraphTests)
 
 * [graph-business-trip](graph) -> [Test graph-business-trip](GraphTests)
+
+* [Graph-Depth-First](graph) -> [Test Graph-Depth-First](GraphTests)

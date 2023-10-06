@@ -47,4 +47,4 @@
 
 * [graph-business-trip](graph) -> [Test graph-business-trip](GraphTests)
 
-* [Graph-Depth-First](graph) -> [Test Graph-Depth-First](GraphTests)
+* [Graph-Depth-First](graph/GraphDepthFirst.md) -> [Test Graph-Depth-First](GraphTests)

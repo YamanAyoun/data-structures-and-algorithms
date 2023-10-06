@@ -164,6 +164,25 @@ namespace GraphTests
             Assert.Null(cost);
         }
 
+		
 
-    }
+		[Fact]
+		public void DepthFirstFromStartNode()
+		{
+			// Arrange
+			Graph graph = new Graph();
+			graph.AddVertex("A");
+			graph.AddVertex("B");
+			graph.AddVertex("C");
+
+			// Act
+			List<string> traversalOrder = graph.DepthFirst("B");
+
+			// Assert
+			Assert.Equal("B", traversalOrder[0]);
+		}
+
+
+
+	}
 }
